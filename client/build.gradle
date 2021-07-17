@@ -1,0 +1,16 @@
+bootJar {
+    enabled = true
+}
+
+dependencies {
+    api project(':lib')
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-aop'
+
+    implementation('net.devh:grpc-client-spring-boot-starter:2.12.0.RELEASE'){
+        exclude group: 'io.grpc', module: 'grpc-netty-shaded'
+    }
+
+
+}
