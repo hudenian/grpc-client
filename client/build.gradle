@@ -11,6 +11,4 @@ dependencies {
     implementation('net.devh:grpc-client-spring-boot-starter:2.12.0.RELEASE'){
         exclude group: 'io.grpc', module: 'grpc-netty-shaded'
     }
-
-
 }
